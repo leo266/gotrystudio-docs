@@ -30,12 +30,12 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
     "sphinx.ext.autosectionlabel",
-    "sphinxcontrib.googleanalytics",
+    # "sphinxcontrib.googleanalytics",  # 暂时注释掉，避免依赖问题
     # "sphinx_favicon"
 ]
 
 autosectionlabel_prefix_document = True
-googleanalytics_id="G-THC0SQQTDX"
+# googleanalytics_id="G-THC0SQQTDX"  # 暂时注释掉
 
 source_suffix = {
     '.rst': 'restructuredtext',
@@ -99,21 +99,27 @@ print(rst_prolog)
 del frozen_locals
 
 html_css_files = [
+    # 本地文件引用（备用）
     # "css/color-roles.css",
     # "css/custom.css",
     # "css/navigationStyle.css",
     # "css/basicLightbox.min.css",
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@latest/docs/source/_static/css/color-roles.css',
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@latest/docs/source/_static/css/custom.css',
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@latest/docs/source/_static/css/navigationStyle.css',
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@latest/docs/source/_static/css/basicLightbox.min.css',
+    
+    # 使用自己的CDN链接（leo266/gotrystudio-docs@v1.0.0）
+    'https://cdn.jsdelivr.net/gh/leo266/gotrystudio-docs@v1.0.0/docs/source/_static/css/color-roles.css',
+    'https://cdn.jsdelivr.net/gh/leo266/gotrystudio-docs@v1.0.0/docs/source/_static/css/custom.css',
+    'https://cdn.jsdelivr.net/gh/leo266/gotrystudio-docs@v1.0.0/docs/source/_static/css/navigationStyle.css',
+    'https://cdn.jsdelivr.net/gh/leo266/gotrystudio-docs@v1.0.0/docs/source/_static/css/basicLightbox.min.css',
 ]
 
 html_js_files = [
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@latest/docs/source/_static/js/basicLightbox.min.js',
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@latest/docs/source/_static/js/custom.js',
+    # 本地文件引用（备用）
     # 'js/basicLightbox.min.js',
-    # 'js/custom.js'
+    # 'js/custom.js',
+    
+    # 使用自己的CDN链接（leo266/gotrystudio-docs@v1.0.0）
+    'https://cdn.jsdelivr.net/gh/leo266/gotrystudio-docs@v1.0.0/docs/source/_static/js/basicLightbox.min.js',
+    'https://cdn.jsdelivr.net/gh/leo266/gotrystudio-docs@v1.0.0/docs/source/_static/js/custom.js',
 ]
 
 extlinks = {
