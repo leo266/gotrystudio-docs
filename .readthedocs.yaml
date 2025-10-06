@@ -1,7 +1,7 @@
 version: "2"
 
 formats:
-    - epub
+    # - epub  # 暂时不生成epub
     - htmlzip
 
 build:
