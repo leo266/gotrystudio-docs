@@ -3,6 +3,11 @@
     display: none !important;
 }
 
+/* Hide the floating RTD controls toolbar */
+.rtd-controls {
+    display: none !important;
+}
+
 /* ---------------------------------------------------------------------------------------------- */
 /* description: freenove-docs QR code style
 
